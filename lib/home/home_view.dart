@@ -8,6 +8,25 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: HomeBody());
+    return Scaffold(
+      appBar: AppBar(
+        leading: SizedBox.shrink(),
+        leadingWidth: 0,
+        title: Row(
+          children: [
+            Image.asset('assets/image/Vector (1).png'),
+            SizedBox(width: 10),
+
+            Text('61 Hopper street..'),
+            SizedBox(width: 10),
+            Icon(Icons.keyboard_arrow_down, size: 34),
+            Spacer(),
+            Image.asset('assets/image/Icons.png', width: 30, height: 30),
+          ],
+        ),
+      ),
+
+      body: HomeBody(),
+    );
   }
 }
