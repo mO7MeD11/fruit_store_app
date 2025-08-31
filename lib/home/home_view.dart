@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import 'package:pro2/home/home_body.dart';
 import 'package:pro2/views/splash.dart';
 
 class Home extends StatelessWidget {
@@ -6,6 +8,6 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(body: HomeBody());
   }
 }
