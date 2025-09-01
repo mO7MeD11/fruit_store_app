@@ -27,6 +27,34 @@ class Home extends StatelessWidget {
         ),
       ),
 
+      bottomNavigationBar: BottomNavigationBar(
+        onTap: (index) {},
+         
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home, color: Colors.black),
+            label: "home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.favorite, color: Colors.black),
+            label: "search",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search, color: Colors.black),
+            label: "search",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person, color: Colors.black),
+            label: "person",
+          ),
+
+          BottomNavigationBarItem(
+            icon: Icon(Icons.menu, color: Colors.black),
+            label: "Menu",
+          ),
+        ],
+      ),
+
       body: HomeBody(),
     );
   }
